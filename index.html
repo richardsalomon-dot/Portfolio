@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richard Salomon | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Portfolio</h2>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="richard.jpg" alt="Richard Salomon" class="profile-img">
+      <div>
+        <h1>Hi, I’m <span>Richard Salomon</span></h1>
+        <p>I’m a Web Developer</p>
+        <a href="#projects" class="btn">View my work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Richard Salomon, an aspiring web developer passionate about creating
+      functional and beautiful websites. I enjoy learning new technologies and
+      bringing ideas to life through code and design.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <img src="blog.jpg" alt="Project 1">
+      <div>
+        <h3>Personal Blog Website</h3>
+        <p>A simple platform for writing and sharing blogs with responsive design.</p>
+      </div>
+    </div>
+    <div class="project-item">
+      <img src="todo.jpg" alt="Project 2">
+      <div>
+        <h3>To-Do List App</h3>
+        <p>A productivity app to manage tasks with a clean, easy-to-use interface.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, Responsive Design, Git, Basic UI/UX</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:richardsalomon@example.com">richard.salomon@carsu.edu.ph</a></p>
+    <p>Phone: +639092763060</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Richard Salomon. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
